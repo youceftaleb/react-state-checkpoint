@@ -15,6 +15,7 @@ class App extends React.Component {
   }
   componentDidUpdate() {
     clearInterval(this.timer);
+    this.state.counter = 0;
     this.timer = setInterval(
       () => this.state.counter += 1,
       1000
